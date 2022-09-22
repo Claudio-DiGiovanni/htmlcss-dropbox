@@ -11,10 +11,76 @@ html{
 nav{
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-sx{
+    display: flex;
 }
 
 nav ul{
     display: flex;
+    list-style: none;
 }
 
-.logo
+ul li{
+    margin: 8px;
+}
+
+li a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-sx, .nav-dx{
+    margin: 2px 10px;
+}
+
+.btn{
+    background-color: rgb(0, 97, 255);
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(180, 208, 231);
+    margin-top: 40px;
+}
+
+.container-header{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 1200px;
+}
+
+.content-header{
+    max-width: 400px;
+}
+
+.img-header{
+    max-width: 800px;
+}
+
+.img-header img{
+    width: 100%;
+}
+
+header h1{
+    text-align: center;
+    margin: 20px auto;
+    width: 1200px;
+    font-size: 80px;
+}
+
+.content-header p{
+    margin: 4rem 0;
+}
+
+.icon-header{
+    font-size: 50px;
+}
