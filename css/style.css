@@ -6,6 +6,7 @@
 
 html{
     font-family: 'Roboto', sans-serif;
+    padding: 1rem;
 }
 
 nav{
@@ -45,6 +46,7 @@ li a{
     color: white;
     padding: 8px 15px;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 header{
@@ -286,7 +288,6 @@ label{
 
 .background-blue{
     background-color: #B4D0E7;
-    height: 400px;
     display: flex;
 }
 
@@ -298,6 +299,7 @@ label{
 
 .blue-box{
     align-self: center;
+    padding: 100px 0;
 }
 
 .no-border{
@@ -317,6 +319,32 @@ label{
     justify-content: space-between;
 }
 
+footer{
+    background-color: black;
+    width: 100%;
+}
 
+.container-footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
 
+.col-footer{
+    max-width: calc(100%/5-2rem);
+    padding: 3rem 0;
+}
 
+.col-footer ul{
+    list-style: none;
+}
+
+.col-footer li a{
+    color: white;
+}
+
+.col-footer h5{
+    color: white;
+    font-size: 25px;
+}
