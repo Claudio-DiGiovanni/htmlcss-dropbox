@@ -284,6 +284,38 @@ label{
     background-color: #FFD830;
 }
 
+.background-blue{
+    background-color: #B4D0E7;
+    height: 400px;
+    display: flex;
+}
+
+.colored{
+    color: #61082B;
+    font-size: 40px;
+    margin-right: 300px;
+}
+
+.blue-box{
+    align-self: center;
+}
+
+.no-border{
+    border: none;
+}
+
+.faq h2{
+    margin: 100px 0;
+}
+
+.faq hr{
+    margin: 50px 0;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
