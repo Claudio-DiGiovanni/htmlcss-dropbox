@@ -17,6 +17,8 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
+    box-shadow: 1px 1px 10px 10px rgba(158,158,158,0.79);
+    z-index: 99;
 }
 
 .nav-sx{
@@ -347,4 +349,17 @@ footer{
 .col-footer h5{
     color: white;
     font-size: 25px;
+}
+
+.btn:hover{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.question:hover{
+    opacity: 0;
+    transition: .5s;
 }
