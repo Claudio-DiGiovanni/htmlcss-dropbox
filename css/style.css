@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html{
+body{
     font-family: 'Roboto', sans-serif;
     padding: 1rem;
 }
@@ -12,10 +12,13 @@ html{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: white;
-    height: 40px;
+    height: 5rem;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     box-shadow: 1px 1px 10px 10px rgba(158,158,158,0.79);
     z-index: 99;
@@ -53,7 +56,10 @@ li a{
 
 header{
     background-color: rgb(180, 208, 231);
-    margin-top: 40px;
+}
+
+header h1{
+    padding-top: 10rem;
 }
 
 .container-header{
@@ -93,7 +99,7 @@ header h1{
 
 .container{
     max-width: 900px;
-    margin: 100px auto;
+    margin: 10rem auto;
 }
 
 .container h2{
@@ -113,7 +119,7 @@ label{
     display: flex;
     justify-content: space-between;
     margin: auto;
-    margin: 40px auto;
+    margin: 5rem auto;
 }
 
 .col{
@@ -129,7 +135,7 @@ label{
 }
 
 .col h3{
-    margin: 10px;
+    padding: 3rem 1rem;
 }
 
 .price{
@@ -143,7 +149,20 @@ label{
 }
 
 .info{
-    margin: 40px 10px 40px;
+    padding: 2rem 1rem;
+    display: flex;
+}
+
+.check-point{
+    display: flex;
+}
+
+.check{
+    color: #0093CE;
+}
+
+.content-col{
+    padding: 1em;
 }
 
 .col .btn{
@@ -204,8 +223,8 @@ label{
 }
 
 .block{
-    width: 30%;
-    margin: 10px;
+    width:25%;
+    margin: 2rem;
 }
 
 .block img{
@@ -232,13 +251,14 @@ label{
 }
 
 .square{
-    max-width: 50%;
-    max-height: 50%;
+    width: 50%;
+    height: 50%;
     padding: 50px;
 }
 
 .square img{
     width: 100%;
+    filter: invert(100%);
 }
 
 .company{
@@ -319,6 +339,12 @@ label{
 .question{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.question p{
+    display: none;
+    width: 100%;
 }
 
 footer{
@@ -359,7 +385,11 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.question:hover{
+.question h4:hover ~ p{
+    display: block;
+}
+
+.question h4:hover{
     opacity: 0;
-    transition: .5s;
+    transition: 5s;
 }
